@@ -19,5 +19,13 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
     "pug": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kim-Quirk/prove02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kim-Quirk/prove02/issues"
+  },
+  "homepage": "https://github.com/Kim-Quirk/prove02#readme"
 }
