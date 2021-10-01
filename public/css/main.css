@@ -206,3 +206,11 @@ form {
     display: none;
   }
 }
+
+.cart li {
+  list-style-type: none;
+}
+
+.cart p, .cart form {
+  display: inline-flex;
+}

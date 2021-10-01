@@ -52,4 +52,16 @@
     "imageUrl": "https://m.media-amazon.com/images/I/71IfNk+-+sL._SL1500_.jpg",
     "description": "A professional makeup kit! Includes foundation, eyeshadow, eyebrow pencils, brushes, and much more.",
     "price": "53"
+}, {
+    "id": "223245",
+    "title": "Leather Boots",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0419/1525/products/1024x1024-Men-Explorer-BlackMatte-3.4.jpg?v=1602090871",
+    "description": "Finely crafted boots! They come in various colors and sizes and are made of high quality materials.",
+    "price": "75"
+}, {
+    "id": "223246",
+    "title": "Hand Crafted Tie-Dye Shirts",
+    "imageUrl": "https://i5.walmartimages.com/asr/d45e28cd-38f0-4061-9968-e771271f5f46_1.876f2da9bad247b5c5db94de7bbe6a13.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+    "description": "Professionally made tie-dye shirts! The shirts are soft and custom made. You can request colors and style of tie-dye.",
+    "price": "43"
 }]
