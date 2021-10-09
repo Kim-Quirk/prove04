@@ -6,41 +6,35 @@
         <%- include('../includes/navigation.ejs') %>
 
             <main>
-                <% if (prods.length > 0) { %>
+                <% if (sales.length > 0) { %>
                     <div class="grid">
-                        <% for (let product of prods) { %>
+                        <% for (let sale of sales) { %>
                             <article class="card product-item">
                                 <header class="card__header">
                                     <h1 class="product__title">
-                                        <%= product.title %>
+                                        <%= sale.title %>
                                     </h1>
-                                    <h4> Reviews: <%= product.review %>/5
+                                    <h4> Reviews: <%= sale.review %>/5
                                     </h4>
                                 </header>
                                 <div class="card__image">
-                                    <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
+                                    <img src="<%= sale.imageUrl %>" alt="<%= sale.title %>">
                                 </div>
                                 <div class="card__content">
                                     <h2 class="product__price">$
-                                        <%= product.price %>
+                                        <%= sale.price %>
                                     </h2>
                                     <p class="product__description">
-                                        <%= product.description %>
+                                        <%= sale.description %>
                                     </p>
-                                </div>
-                                <div class="card__actions">
-                                    <a href="/admin/edit-product/<%= product._id %>?edit=true" class="btn">Edit</a>
-                                    <form action="/admin/delete-product" method="POST">
-                                        <input type="hidden" value="<%= product._id %>" name="productId">
-                                        <button class="btn" type="submit">Delete</button>
-                                    </form>
-
+                                    <hr>
+                                    <p class="product__description">Call (800) 999-8888 for more information.</p>
                                 </div>
                             </article>
                             <% } %>
                     </div>
                     <% } else { %>
-                        <h1>No Products Found!</h1>
+                        <h1>No Sales Found!</h1>
                         <% } %>
             </main>
             <%- include('../includes/end.ejs') %>

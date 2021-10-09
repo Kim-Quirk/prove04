@@ -1,5 +1,6 @@
 const Product = require('../models/product');
 const Order = require('../models/order');
+const Sale = require('../models/sale')
 
 exports.getProducts = (req, res, next) => {
   Product.find()
@@ -9,6 +10,21 @@ exports.getProducts = (req, res, next) => {
         prods: products,
         pageTitle: 'All Products',
         path: '/products'
+      });
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+exports.getSales = (req, res, next) => {
+  Sale.find()
+    .then(sales => {
+      console.log(sales);
+      res.render('shop/sale-list', {
+        sales: sales,
+        pageTitle: 'All Products on Sale',
+        path: '/sales'
       });
     })
     .catch(err => {

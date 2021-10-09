@@ -59,6 +59,7 @@ exports.postEditProduct = (req, res, next) => {
   const updatedPrice = req.body.price;
   const updatedImageUrl = req.body.imageUrl;
   const updatedDesc = req.body.description;
+  const updatedReview = req.body.review;
 
   Product.findById(prodId)
     .then(product => {
@@ -66,6 +67,7 @@ exports.postEditProduct = (req, res, next) => {
       product.price = updatedPrice;
       product.description = updatedDesc;
       product.imageUrl = updatedImageUrl;
+      product.review = updatedReview;
       return product.save();
     })
     .then(result => {
